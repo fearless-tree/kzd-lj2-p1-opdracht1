@@ -1,0 +1,626 @@
+/*
+ * Algemene pagina-stijlen
+ */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #fff;
+  color: #555;
+  font: 15px/1.7 Roboto, sans-serif;
+}
+h1,
+h2,
+h3,
+h6 {
+  color: #333;
+  font-family: Rubik, sans-serif;
+}
+p,
+ul {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+a:hover,
+a:focus {
+  color: #0b57e3;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+section {
+  overflow: hidden;
+}
+section[id] {
+  scroll-margin-top: 90px;
+}
+.space {
+  padding: 120px 0;
+}
+.no-padding {
+  padding: 0;
+}
+.card-row {
+  margin-inline: 0;
+}
+
+/*
+ * Header
+ */
+.top-bar {
+  padding: 15px 0;
+  color: #fff;
+  background: #333;
+}
+.top-bar .row {
+  display: flex;
+  align-items: center;
+}
+.top-bar ul {
+  padding: 0;
+  list-style: none;
+}
+.top-bar ul li {
+  display: inline-block;
+}
+.top-bar ul li a {
+  padding: 0 20px;
+  color: #fff;
+}
+.top-bar ul li:first-child a {
+  padding-left: 0;
+}
+.top-bar ul li:last-child a {
+  padding-right: 0;
+}
+.top-bar .contact li a i {
+  margin-right: 7px;
+}
+.top-bar .topbar-block .btn {
+  display: inline-block;
+  margin: 0 3px;
+  padding: 8px 30px;
+}
+.top-bar .topbar-block .btn:hover {
+  color: #333;
+  background: #fff;
+}
+
+.site-header {
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+}
+nav#slide-nav {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+nav#slide-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#slide-nav #menu_nav > ul {
+  float: right;
+}
+#slide-nav #menu_nav > ul > li > a {
+  padding: 15px 20px;
+  color: #282828;
+  font-weight: 600;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+#slide-nav #menu_nav ul > li > a:hover,
+#slide-nav #menu_nav ul > li > a:focus,
+#slide-nav #menu_nav ul > li.active > a {
+  color: #0b57e3 !important;
+  background: transparent;
+}
+/* is-fixed wordt na het scrollen toegevoegd en plakt de navbar bovenaan. */
+nav#slide-nav.is-fixed {
+  position: fixed;
+  top: 0;
+  right: 20%;
+  left: 20%;
+  margin: 0;
+  border: 0;
+  z-index: 1000;
+  background: #fff;
+}
+#slide-nav.is-fixed #menu_nav > ul > li > a {
+  line-height: 50px;
+}
+.search-button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: #282828;
+  background: #fbfbfb;
+}
+
+/*
+ * Hero
+ */
+#carousel-example-generic .carousel-inner > .item > img {
+  width: 100%;
+  height: auto;
+}
+#carousel-example-generic .header-text {
+  position: absolute;
+  top: 34%;
+  right: auto;
+  left: 9%;
+  color: #fff;
+}
+#carousel-example-generic .header-text h1 {
+  margin: 20px 0 10px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+#carousel-example-generic .header-text h1 span {
+  padding: 10px;
+  color: #fff;
+  background: #0b57e3;
+}
+#carousel-example-generic .hero-subtitle {
+  margin: 20px 0 10px;
+  font: 500 24px/1.1 Rubik, sans-serif;
+}
+#carousel-example-generic .hero-subtitle span {
+  display: block;
+  margin: 25px 0;
+  padding: 15px;
+  color: #fff;
+  background: #000;
+}
+#carousel-example-generic .btn-theme {
+  margin-right: 15px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-transform: uppercase;
+}
+#carousel-example-generic .btn-theme:hover {
+  border-color: #fff;
+  color: #000;
+  background: #fff;
+}
+#carousel-example-generic .carousel-control {
+  width: 0;
+  border: 0;
+  background: none;
+  opacity: 1;
+  text-shadow: none;
+}
+#carousel-example-generic .carousel-control .glyphicon-chevron-left,
+#carousel-example-generic .carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 45%;
+  z-index: 5;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: -15px;
+  background: #000;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+}
+#carousel-example-generic .carousel-control.left .glyphicon-chevron-left {
+  left: 0;
+}
+#carousel-example-generic .carousel-control.right .glyphicon-chevron-right {
+  right: 0;
+}
+#carousel-example-generic .carousel-control:hover {
+  opacity: 0.7;
+}
+#carousel-example-generic .carousel-indicators button {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+}
+#carousel-example-generic .carousel-indicators button.active {
+  border-color: #0b57e3;
+  background: #0b57e3;
+}
+
+/*
+ * Offers
+ */
+#offer {
+  position: relative;
+}
+#offer::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 49%;
+  content: '';
+  background: url('/images/bg/h2-1.jpg') center top / cover no-repeat;
+}
+#offer .offer-base {
+  position: relative;
+  z-index: 1;
+}
+.main-heading {
+  margin-bottom: 50px;
+}
+.main-heading h2 {
+  margin: 0;
+  color: #282828;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-heading p {
+  padding: 0 258px;
+  color: #282828;
+  font-size: 15px;
+  line-height: 28px;
+}
+.main-heading .eyebrow {
+  margin: 0 0 15px;
+  padding: 0;
+  border: 0;
+  color: #0b57e3;
+  font: 500 11px/1.1 Rubik, sans-serif;
+  text-transform: uppercase;
+}
+#offer .main-heading p {
+  margin-top: 16px;
+  padding: 0 0 0 25px;
+  border-left: 3px solid #0b57e3;
+  font-style: italic;
+}
+#offer .main-heading .eyebrow {
+  margin: 0 0 15px;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+}
+.offer-item h3 {
+  margin: 15px 0;
+  color: #323232;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.offer-item h3 a,
+.service .service-item h3 a {
+  color: #323232;
+}
+.offer-item p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+  line-height: 26px;
+}
+.offer-item a.more {
+  color: #666;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.offer-item a:hover {
+  color: #0b57e3 !important;
+}
+#offer .offer-item > i {
+  color: #ccc;
+  font-size: 60px;
+}
+#offer .button {
+  margin-top: 60px;
+}
+.btn {
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.btn.bg {
+  background: #0b57e3;
+}
+.btn.black-border {
+  padding: 15px 40px 15px 18px;
+  background: #333;
+  text-transform: uppercase;
+}
+.btn:hover {
+  color: #fff;
+  background: #0b57e3;
+}
+.radius-2x {
+  border-radius: 22px;
+}
+
+/*
+ * Services
+ */
+.service .service-item .eyebrow {
+  margin: 0 0 15px;
+  color: #0b57e3;
+  font: 500 12px/1.1 Rubik, sans-serif;
+  text-transform: uppercase;
+}
+.service .service-item h3 {
+  margin: 0 0 20px;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.service .service-item p {
+  color: #555;
+  line-height: 28px;
+}
+.service .icon {
+  display: grid;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px;
+  place-items: center;
+  border: 1px solid #0b57e3;
+  border-radius: 50%;
+  background: #0b57e3;
+}
+.service .icon i {
+  color: #fff;
+  font-size: 40px;
+}
+.service .service-item:hover .icon {
+  background: #fff;
+}
+.service .service-item:hover .icon i {
+  color: #333;
+}
+
+/*
+ * App
+ */
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  color: #fff;
+  background: #0b57e3;
+  font-size: 25px;
+}
+.back-to-top:hover {
+  color: #fff;
+  background: #333;
+}
+
+/*
+ * Responsive
+ */
+/* Tablet en kleinere laptops: minder ruimte en kleinere Hero-tekst. */
+@media (max-width: 1199px) {
+  #slide-nav #menu_nav > ul > li > a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .main-heading p {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  #offer::before {
+    opacity: 0;
+  }
+  /* Hero-tekst en bediening aanpassen aan de schermbreedte. */
+  #carousel-example-generic .header-text {
+    top: 23%;
+  }
+  #carousel-example-generic .header-text h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  #carousel-example-generic .hero-subtitle {
+    margin: 0;
+    font-size: 20px;
+  }
+  #carousel-example-generic .hero-subtitle span {
+    margin: 0;
+  }
+  .space {
+    padding: 80px 0;
+  }
+}
+/* Tablets: navbar en servicekaarten compacter maken. */
+@media (min-width: 768px) and (max-width: 992px) {
+  nav#slide-nav .container {
+    display: block;
+  }
+  #slide-nav .navbar-header {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #slide-nav #menu_nav > ul > li > a {
+    padding: 0 7px;
+    line-height: 44px;
+  }
+  .top-bar .top-button li a {
+    padding: 0 3px;
+  }
+  .top-bar .topbar-block .btn {
+    margin: 0;
+    padding: 5px 10px;
+  }
+  .main-heading p {
+    padding: 0 40px;
+  }
+  .main-heading h2 {
+    font-size: 30px;
+  }
+  .service .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .service .icon i {
+    font-size: 26px;
+  }
+  .service .service-item p {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .space {
+    padding: 80px 0;
+  }
+}
+/* Mobiel: menu, tekst en secties aanpassen aan een smal scherm. */
+@media (max-width: 767px) {
+  .top-bar {
+    padding: 60px 0 40px;
+  }
+  .top-bar .row {
+    display: block;
+  }
+  .top-bar .topbar-block {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .top-bar .topbar-block .btn {
+    padding: 6px 21px;
+    font-size: 10px;
+  }
+  .top-bar .top-button li a {
+    padding: 0 15px;
+    font-size: 9px;
+  }
+  .site-header {
+    height: 0;
+  }
+  /* Mobiele navbar staat bovenaan; het uitklapmenu zit eronder. */
+  nav#slide-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 0;
+    background: #fff;
+  }
+  nav#slide-nav .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #slide-nav .navbar-header {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px 0;
+  }
+  #slide-nav .menu-logo img {
+    width: 125px;
+  }
+  #slide-nav .nav-button {
+    position: absolute;
+    top: 11px;
+    right: 66px;
+    padding: 0;
+  }
+  #slide-nav .search-button {
+    width: 32px;
+    height: 32px;
+  }
+  #slide-nav .navbar-toggle {
+    margin: 0;
+    padding: 7px;
+    border: 0;
+    border-radius: 0;
+  }
+  #slide-nav .navbar-toggle .icon-bar {
+    background: #333;
+  }
+  #slide-nav #menu_nav {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    max-height: calc(100vh - 55px);
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    border: 0;
+    background: #fff;
+    box-shadow: 0 5px 15px #0002;
+  }
+  #slide-nav #menu_nav.menu-open {
+    display: block;
+  }
+  #slide-nav #menu_nav .navbar-nav {
+    width: 100%;
+    margin: 0;
+  }
+  #slide-nav #menu_nav > ul > li > a {
+    display: block;
+    padding: 12px 24px;
+    line-height: 24px;
+  }
+  #slide-nav.is-fixed #menu_nav {
+    top: 50px;
+  }
+  .service .service-item:not(:last-child),
+  #offer .offer-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  #offer::before {
+    display: none;
+  }
+  .main-heading {
+    margin-bottom: 35px;
+  }
+  .main-heading p {
+    padding: 0;
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .main-heading h2 {
+    font-size: 19px;
+  }
+  /* Hero-tekst en bediening aanpassen aan de schermbreedte */
+  #carousel-example-generic .header-text {
+    top: 40px;
+  }
+  #carousel-example-generic .header-text h1 {
+    font-size: 12px;
+  }
+  #carousel-example-generic .header-text h1 span {
+    padding: 4px;
+  }
+  #carousel-example-generic .hero-subtitle {
+    margin: 0;
+    font-size: 12px;
+  }
+  #carousel-example-generic .hero-subtitle span {
+    margin: 0;
+    padding: 4px;
+  }
+  #carousel-example-generic .carousel-control .glyphicon-chevron-left,
+  #carousel-example-generic .carousel-control .glyphicon-chevron-right {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
